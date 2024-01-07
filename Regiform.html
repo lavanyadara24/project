@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample Form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="Submit".php" method="POST">
+            <!--Text Input-->
+            <label for="First Name">First Name:</label>
+            <input type="text" name="First Name" id="First Name"required>
+            <br>
+            <!--checkbox-->
+            <label>Interests:</label>
+            <input type="checkbox" name="Interests" value="Sports">SPORTS
+            <input type="checkbox" name="Interests" value="Music">MUSIC
+            <input type="checkbox" name="Interests" value="Travel">TRAVEL
+            <br>
+            <!--Radio Buttons-->
+            <label>Gender:</label>
+            <input type="radio" name="Gender" value="Male">MALE
+            <input type="radio" name="Gender" value="Female">FEMALE 
+            <br>
+            <!--Email Input-->
+            <label for="Email">Email</label>
+            <input type="Email" name="Email" id="Email" required>
+            <br>
+            <!--Date Input-->
+            <label for="BirthDate">Date of Birth:</label>
+            <input type="Date" name="BirthDate" id="BirthDate">
+            <br>
+            <!--Text Area-->
+            <label for="Comments">Comments:</label>
+            <textarea name="Comments" id="Comments"
+            rows="4" cols="50"></textarea>
+            <br>
+            <!--Drop--Down menu-->
+            <label for="Country">Country:</label>
+            <select name="Country" id="Country">
+                <option value="USA">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">United Kingdom</option>
+            </select>
+            <br>
+            <!--File Import -->
+            <label for="FileUpload">Upload a file:</label>
+             <input type="uploadfile" id="choosefile">
+              
+            <br>
+            <!--Buttons-->
+            <input type="Submit" value="Sign UP">
+            <input type="reset" value="Reset"
+
+        </form>
+    </body>
+</html>
